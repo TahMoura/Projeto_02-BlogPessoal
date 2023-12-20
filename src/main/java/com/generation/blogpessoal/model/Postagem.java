@@ -48,6 +48,10 @@ public class Postagem {
 	@ManyToOne //Muitas Postagens para um Tema
 	@JsonIgnoreProperties("postagem") //Evita a recursividade, ignorando a própria classe (vai evitar o looping. tema-postagem-postagem-tema-postagem-tema-postagem...)
 	private Tema tema;
+	
+	@ManyToOne //Muitas Postagens para um Usuario
+	@JsonIgnoreProperties("postagem")
+	private Usuario usuario;
 
 	
 	//Getters and Setters
@@ -89,6 +93,14 @@ public class Postagem {
 
 	public void setTema(Tema tema) {
 		this.tema = tema;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 	
 	
