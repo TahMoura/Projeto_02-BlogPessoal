@@ -20,8 +20,8 @@ public class SwaggerConfig {
         return new OpenAPI()
             .info(new Info()
                 .title("Projeto Blog Pessoal")
-                .description("Projeto Blog Pessoal - Talia Moura/n "
-                		+ "Em parceria com: Generation Brasil")
+                .description("Projeto Blog Pessoal - Talia Moura"
+                		+ " | Em parceria com: Generation Brasil")
                 .version("v0.0.1")
                 .license(new License()
                     .name("Generation Brasil")
