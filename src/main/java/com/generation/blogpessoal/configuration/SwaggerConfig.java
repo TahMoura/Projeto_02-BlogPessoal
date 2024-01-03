@@ -28,10 +28,10 @@ public class SwaggerConfig {
                     .url("https://brazil.generation.org/"))
                 .contact(new Contact()
                     .name("Talia Moura")
-                    .url("https://github.com/conteudoGeneration")
+                    .url("https://github.com/TahMoura")
                     .email("talia.dev@outlook.com")))
             .externalDocs(new ExternalDocumentation()
-                .description("Github")
+                .description("Github - Generation Brasil: ")
                 .url("https://github.com/conteudoGeneration/"));
     }
 
